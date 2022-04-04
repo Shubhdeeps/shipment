@@ -8,7 +8,6 @@ export const ActionTypes = {
     SET_ITEM: 'SET_ITEM',
     NEW_ITEM: 'NEW_ITEM',
     NEW_ALERT: 'NEW_ALERT',
-    UPDATE: 'UPDATE',
-    DETAILS: 'DETAILS',
-    ERROR: 'ERROR'
+    ERROR: 'ERROR',
+    CLEAR_ITEMS: 'CLEAR_ITEMS'
 }

@@ -40,6 +40,12 @@ export const deSelectItem = (orderNo) => {
     }
 }
 
+export const deSelectAllItems = () => {
+    return{
+        type: ActionTypes.CLEAR_ITEMS
+    }
+}
+
 export const deleteItem = () => {
     return{
         type: ActionTypes.DELETE_ITEMS
@@ -52,6 +58,7 @@ export const updateItem = (orderNo, key, value) => {
         payload: {orderNo, key, value}
     }
 }
+
 
 export const setDetailsSelected = (value) => {
     return{
@@ -74,18 +81,6 @@ export const newAlert = (message) => {
     return{
         type: ActionTypes.NEW_ALERT,
         payload: message
-    }
-}
-
-export const updateButton = () => {
-    return{
-        type: ActionTypes.UPDATE
-    }
-}
-
-export const detailsButton = () => {
-    return{
-        type: ActionTypes.DETAILS
     }
 }
 
