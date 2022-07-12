@@ -63,7 +63,7 @@ const Content = () => {
                                 }
                             </tbody>
                     </Table>
-                    {items.products.length === 0 && <div className="text-center mt-5 mb-5"> <Spinner animation="border" /></div> && !errorMessage}
+                    {!errorMessage && items.products.length === 0 && <div className="text-center mt-5 mb-5"> <Spinner animation="border" /></div>}
                </div>
             </div>
                <br />

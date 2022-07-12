@@ -4,14 +4,18 @@ import { ActionTypes } from "../constants/action-types";
 
 // with the help of thunk, implementing async action in redux
 export const setItems = () => {
-    const baseURL = 'https://my.api.mockaroo.com/shipments.json?key=5e0b62d0'
+    // const baseURL = 'https://my.api.mockaroo.com/shipments.json?key=5e0b62d0'
+    const baseURLcopy = 'https://raw.githubusercontent.com/Shubhdeeps/personal/main/assignment/data.json'
 
     return async (dispatch, getState) => {
-        await axios.get(baseURL)
-        .then(response => dispatch({
+        await axios.get(baseURLcopy)
+        .then(response => {
+            dispatch({
             type: ActionTypes.SET_ITEMS,
             payload: response.data
-        }))
+           })
+           dispatch(setError("")) 
+        })
         .catch((error) => 
         dispatch(setError(error.message)) 
         )
