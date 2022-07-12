@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/shipment/static/js/main.8d210061.js",
+    "static/media/header-cover.png": "/shipment/static/media/header-cover.879ec5a150b224dc9398.png",
+    "index.html": "/shipment/index.html",
+    "main.8d210061.js.map": "/shipment/static/js/main.8d210061.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.8d210061.js"
+  ]
+}
